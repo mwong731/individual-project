@@ -38,13 +38,13 @@ $('#website-button').on('click', function (event) {
         event.preventDefault();
         $('.app').hide("slow");
         showing=1;
-        $('#website-button').css({"background-color":"#2caa87","color":"white"});
+        $('#website-button').css({"background-color":"#2caa87","color":"#ffffff"});
         $('#app-button').css({"background-color":"","color":""});
     }else if(showing==2){ //app button clicked;
         $('.web').show("slow");
         $('.app').hide("slow");
         showing=1;
-        $('#website-button').css({"background-color":"#2caa87","color":"white"});
+        $('#website-button').css({"background-color":"#2caa87","color":"#ffffff"});
         $('#app-button').css({"background-color":"","color":""});
     }else if(showing==1){//show all;
         $('.app').show("slow");
@@ -60,13 +60,13 @@ $('#app-button').on('click', function (event) {
         event.preventDefault();
         $('.web').hide("slow");
         showing=2;
-        $('#app-button').css({"background-color":"#2caa87","color":"white"});
+        $('#app-button').css({"background-color":"#2caa87","color":"#ffffff"});
         $('#website-button').css({"background-color":"","color":""});
     }else if(showing==1){//web button clicked;
         $('.web').hide("slow");
         $('.app').show("slow");
         showing=2;
-        $('#app-button').css({"background-color":"#2caa87","color":"white"});
+        $('#app-button').css({"background-color":"#2caa87","color":"#ffffff"});
         $('#website-button').css({"background-color":"","color":""});
     }else if(showing==2){//show all;
         $('.web').show("slow");
@@ -141,6 +141,5 @@ $('form').submit(function(event){
     if(message!=""&&name!=""&&email!=""){
         alert("Your message is sent!")
     }
-
 
 });
