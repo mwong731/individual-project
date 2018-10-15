@@ -124,8 +124,20 @@ $('form').submit(function(event){
         $('#form-message p').html("");
     }
 
-    //success message
+    //email validation
     var email=event.target.email.value;
+    if(email===""){
+        //border color and reminder
+        $('#email').css("border","#f072ca solid 2px");
+        $('#form-email p').html("Input a valid email");
+    }
+    if(email!=""){
+        //remove border color and reminder
+        $('#email').css("border","");
+        $('#form-email p').html("");
+    }
+
+    //success message
     if(message!=""&&name!=""&&email!=""){
         alert("Your message is sent!")
     }
